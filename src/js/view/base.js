@@ -12,12 +12,14 @@ export const elementStrings = {
     loader : "loader"
 };
 
-//ergeldej baigaa sum
+// unshiij duussan sum-iig arilgah
 export const clearLoader =() =>{
     const loader = document.querySelector(`.${elementStrings.loader}`);
         if(loader) loader.parentElement.removeChild(loader);
     
 };
+
+//ergeldej baigaa sum
 export const renderLoader = parent =>{
     const loader = `
     <div class="${elementStrings.loader}">

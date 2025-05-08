@@ -21,7 +21,6 @@ const controlSearch = async () => {
         //2. Shineer hailtiin object uusgej ugnu
         state.search = new Search(query);
     //3. Hailt hiihed zroiulj Interface beldene (UI)
-
         searchView.clearSearchQuery();
     searchView.clearSearchResult();
     renderLoader(elements.searchResultDev);
@@ -30,7 +29,8 @@ const controlSearch = async () => {
     await state.search.doSearch();
     //5. Hailtiin ur dung delgetsend uzuulne
     clearLoader();
-    if(state.search.result=== undefined) alert("Hailt ilertsgui...")
+    if(state.search.result=== undefined) alert("Hailtaar ilertsgui...");
+    else
     searchView.renderRecipes(state.search.result);
     }
    

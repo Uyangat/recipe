@@ -19,13 +19,17 @@ const renderRecipe = recipe => {
     //UL -ruugee nemne
     elements.searchResultList.insertAdjacentHTML("beforeend", markUp);
 };
+//Hailtiin utgiig hooson bolgodog function
 export const clearSearchQuery =() =>{
     elements.searchInput.value="";
-}
+};
+//Hailtaar garch irsen list-iig hoosoloh function
 export const clearSearchResult = () => {
     elements.searchResultList.innerHTML = "";
-}
+};
+
 export const getInput = () => elements.searchInput.value;
 export const renderRecipes = recipes => {
+    //undefined
     recipes.forEach (renderRecipe);
 };
