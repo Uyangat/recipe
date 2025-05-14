@@ -97,7 +97,6 @@ const controlRecipe = async () => {
   renderRecipe(state.recipe,state.likes.isLiked(id));
   }
 };
-
 ["hashchange","load"].forEach(e =>window.addEventListener(e, controlRecipe));
 //SHineer Like modek-iig app achaallah uyed uusgene
 window.addEventListener("load", e => {
@@ -113,7 +112,6 @@ window.addEventListener("load", e => {
 /*
 Nairlaganii Controller
  */
-
 const controlList =()=>{
     //Nairlagnii model-iig uusgene
   state.list = new List();
@@ -130,8 +128,6 @@ state.recipe.ingredients.forEach(n => {
   listView.renderItem(item);
 });
 }
-
-
 /*
 Like Controller
  */
